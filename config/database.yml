@@ -26,3 +26,10 @@ staging:
   username: <%= ENV["DATABASE_USER"] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
   database: <%= ENV["DATABASE_NAME"] %>
+
+production:
+  host: <%= ENV["DATABASE_HOST"] %>
+  port: <%= ENV["DATABASE_PORT"] %>
+  username: <%= ENV["DATABASE_USER"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  database: <%= ENV["DATABASE_NAME"] %>
