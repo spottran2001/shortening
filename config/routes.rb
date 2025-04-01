@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  post "encode" => "url_shortenings#encode"
+  get "decode" => "url_shortenings#decode"
+  get ":id" => "url_shortenings#show"
 end
