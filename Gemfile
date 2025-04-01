@@ -25,6 +25,15 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem "bootsnap", require: false
 
+# deploy
+gem "capistrano"
+gem "capistrano3-puma"
+gem "capistrano-rails", require: false
+gem 'capistrano-passenger'
+gem "capistrano-yarn"
+gem "capistrano-bundler", require: false
+gem "capistrano-rbenv"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 6.1.0'
