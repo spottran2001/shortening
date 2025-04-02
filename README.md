@@ -18,7 +18,7 @@
 - UBUNTU VERSION
   20.04
 
-###HOW TO MANAGEMENT VERSION NODE USING NVM
+### HOW TO MANAGEMENT VERSION NODE USING NVM
 1. Installation
 ```sh
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
@@ -35,7 +35,9 @@ $ nvm use 18.20.2
 ### HOW TO INSTALL RBENV AND RUBY
 
 1. Installing Rbenv
-refer: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04
+```txt
+Refer: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04
+```
 
 2. Install ruby v3.1.2
 ```sh
@@ -71,6 +73,7 @@ DATABASE_USERNAME=''
 DATABASE_PASSWORD=''
 DATABASE_HOST='localhost'
 DATABASE_PORT='3306'
+DOMAIN='http://localhost:3000/'
 ```
 
 5. Rails Start
