@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class UrlShorteningsController < ActionController::API
+  def index; end
+
   def encode
     short_url = UrlShortenings::Encode.new(encode_params).run
     if short_url
