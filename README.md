@@ -1,9 +1,10 @@
 ### INFORMATION
+
 - RUBY VERSION
   ruby 3.1.2p20
 
 - BUNDLED WITH
-   2.3.7
+  2.3.7
 
 - RAILS VERSION
   7.0.6
@@ -41,6 +42,17 @@ refer: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-r
 rbenv install 3.1.2
 ```
 
+3. Use ruby v3.1.2
+**for local**
+```sh
+rbenv local 3.1.2
+```
+
+**for global**
+```sh
+rbenv global 3.1.2
+```
+
 ### HOW TO RUN
 
 1. BUNDLE
@@ -48,17 +60,12 @@ rbenv install 3.1.2
 $ bundle
 ```
 
-2. Install Webpacker (first-time)
-```sh
-$ rails webpacker:install
-```
-
-3. Create file .env
+2. Create file .env
 ```sh
 $ touch .env
 ```
 
-4. Add config Database
+3. Add config Database
 ```txt
 DATABASE_USERNAME=''
 DATABASE_PASSWORD=''
@@ -74,20 +81,24 @@ $ rails s
 
 ### Security Issue
 
-- Cross-Site Request Forgery (CSRF) ->  CSRF protection tokens -> refer: https://medium.com/rubyinside/a-deep-dive-into-csrf-protection-in-rails-19fa0a42c0ef
+```txt
+  * Cross-Site Request Forgery (CSRF) ->  CSRF protection tokens -> refer: https://medium.com/rubyinside/a-deep-dive-into-csrf-protection-in-rails-19fa0a42c0ef
 
-- DoS/DDoS -> rate limiting
+  * DoS/DDoS -> rate limiting
 
-- SQL Injection -> already use parameter queries
+  * SQL Injection -> Use parameter queries
 
-- ...
+  * HTTPS -> config Secure Sockets Layer (SSL) -> refer: https://gorails.com/guides/free-ssl-with-rails-and-nginx-using-let-s-encrypt
 
+  * ...
+```
 
 ### Scalability
 
+```txt
 Performance:
-  - caching -> redis
-  - load balancing
-  - Sql index
-
-...
+  * Caching -> redis
+  * Load Balancing
+  * Sql index
+  *...
+```
